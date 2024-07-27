@@ -1,0 +1,32 @@
+footer {
+  background-color: #141414;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 40px;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+footer nav ul {
+  list-style: none;
+}
+footer nav ul .footer-title {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+footer nav ul li {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  footer nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}/*# sourceMappingURL=Footer.css.map */

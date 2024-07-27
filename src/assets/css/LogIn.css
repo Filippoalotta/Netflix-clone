@@ -1,0 +1,70 @@
+.log-in-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4941176471), rgba(0, 0, 0, 0.4941176471)), url("../images/netflix-login-background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.log-in-page .log-in-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 50px auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 250px;
+  padding: 30px 50px;
+}
+.log-in-page .log-in-container h2 {
+  cursor: default;
+}
+.log-in-page .log-in-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.log-in-page .log-in-container form input {
+  width: 100%;
+  max-width: 224px;
+  height: 30px;
+  padding: 8px 15px;
+  border: 0;
+  outline: 0;
+  margin: 10px 0;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.log-in-page .log-in-container form button {
+  width: 100%;
+  padding: 8px 15px;
+  border-radius: 4px;
+  margin: 20px 20px 0 20px;
+}
+.log-in-page .log-in-container form .under-button-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.log-in-page .log-in-container form .under-button-content input {
+  width: 15px;
+  margin: 0 6px 0 0;
+  font-size: 14px;
+}
+.log-in-page .log-in-container form .under-button-content span {
+  margin-left: auto;
+  cursor: pointer;
+  color: gray;
+  font-size: 14px;
+}
+.log-in-page .log-in-container .account-text-gray {
+  color: gray;
+  margin: 20px 0 0 0;
+  cursor: default;
+}
+.log-in-page .log-in-container .account-text-gray span {
+  color: #fff;
+  cursor: pointer;
+}/*# sourceMappingURL=LogIn.css.map */

@@ -1,0 +1,12 @@
+$primaryColor: #db0000;
+$secondaryColor: #141414;
+
+.movies-section{
+    transform: translateY(-200px);
+}
+
+@media screen and (max-width: 1000px) {
+    .movies-section{
+        transform: translateY(0);
+    }
+}

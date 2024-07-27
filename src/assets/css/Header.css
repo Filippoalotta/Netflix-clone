@@ -1,0 +1,224 @@
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 300;
+}
+header .logo {
+  z-index: 301;
+  position: relative;
+}
+header .nav-desk ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+header .nav-desk ul a li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+header .search-account {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .search-account .search-bar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  background-color: #141414;
+  border: 1px solid lightgray;
+  padding: 5px;
+  transition: all ease-in-out 0.3s;
+}
+header .search-account .search-bar-container input {
+  border: none;
+  background-color: #141414;
+  outline: none;
+}
+header .search-account .search-bar-container img {
+  padding: 0;
+}
+header .search-account a {
+  margin-left: 5px;
+}
+header .search-account a span {
+  font-weight: 500;
+}
+header .search-account .account {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+header .search-account .account #account-icon {
+  height: 2.5em;
+}
+header .search-account .account #span-icon {
+  height: 0.8em;
+  transition: all ease-in-out 0.3s;
+}
+header .search-account .account:hover #span-icon {
+  transform: rotate(180deg);
+}
+header .none {
+  display: none;
+}
+header .dropdown {
+  display: inline-block;
+  width: 170px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  position: absolute;
+  right: 20px;
+  top: 70px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+header .dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header .dropdown ul .dropdown-element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .dropdown ul .dropdown-element:hover li {
+  text-decoration: underline;
+}
+header .dropdown ul .dropdown-element:last-child {
+  border-top: 1px solid gray;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .hamb {
+  display: none;
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  right: 50px;
+  top: 25px;
+  z-index: 30;
+  transition: all ease-in-out 0.3s;
+}
+header .hamb span {
+  width: 100%;
+  background-color: #fff;
+  height: 2px;
+  position: absolute;
+}
+header .hamb span:nth-child(1) {
+  top: 0;
+}
+header .hamb span:nth-child(2),
+header .hamb span:nth-child(3) {
+  top: 48%;
+}
+header .hamb span:nth-child(4) {
+  bottom: 0;
+  height: 3px;
+}
+header .mb-nav {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 100px;
+  background-color: #141414;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 29;
+  transition: all ease-in-out 0.3s;
+}
+header .mb-nav ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  list-style: none;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+header .mb-nav ul a img {
+  padding: 0;
+  height: 40px;
+}
+header .mb-nav ul a li {
+  font-size: 30px;
+}
+header .mb-nav ul a .home-li {
+  border-top: 1px solid gray;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+header .mb-nav ul .account-a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+header.scroll {
+  background-color: #141414;
+  transition: all ease-in-out 0.3s;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    display: block;
+  }
+  header .nav-desk {
+    display: none;
+  }
+  header .search-account {
+    display: none;
+  }
+  header nav {
+    display: none;
+  }
+  header .hamb {
+    display: inline-block;
+  }
+  header .hamb-open {
+    transform: rotate(180deg);
+  }
+  header .hamb-open span:nth-child(1) {
+    display: none;
+  }
+  header .hamb-open span:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+  header .hamb-open span:nth-child(3) {
+    transform: rotate(45deg);
+  }
+  header .hamb-open span:nth-child(4) {
+    display: none;
+  }
+  header .mb-nav {
+    display: flex;
+    transform: translate(200%);
+  }
+  header .mb-nav-open {
+    transform: translate(0);
+  }
+}/*# sourceMappingURL=Header.css.map */

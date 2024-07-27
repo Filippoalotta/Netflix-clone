@@ -1,0 +1,41 @@
+$primaryColor: #db0000;
+$secondaryColor: #141414;
+
+footer{
+    background-color: $secondaryColor;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 40px;
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        ul{
+            list-style: none;
+            .footer-title{
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            li{
+                cursor: pointer;
+                &:hover{
+                    color: lightgray;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    footer{
+        nav{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+    }
+}

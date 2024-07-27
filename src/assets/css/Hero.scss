@@ -1,0 +1,102 @@
+$primaryColor: #db0000;
+$secondaryColor: #141414;
+
+.hero{
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    .hero-content{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 0 80px 70px;
+        h2{
+            text-transform: uppercase;
+            font-size: 48px;
+            margin: 0;
+            font-family: fantasy;
+        }
+        p{
+            margin: 0 0 20px 0;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            cursor: default;
+        }
+        .buttons-container{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 15px;
+            }
+        }
+    }
+    .age-banner{
+        width: 85px;
+        height: 30px;
+        background-color: rgba(50, 50, 50, 0.5);
+        border-left: 4px solid #fff;
+        padding: 5px 8px 10px 5px;
+        font-size: 20px;
+        position: absolute;
+        right: 0;
+        bottom: 30%;
+        cursor: default;
+    }
+    .overlay{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(180deg, hsla(0, 0%, 8%, 0) 0, hsla(0, 0%, 8%, .15) 15%, hsla(0, 0%, 8%, .35) 29%, hsla(0, 0%, 8%, .58) 44%, #141414 68%, #141414);
+        bottom: -1px;
+        height: 14.7vw;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .hero{
+        width: 500px;
+        height: 50vh;
+        margin: 80px auto 0 auto;
+        padding-bottom: 20px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        .hero-content{
+            text-align: center;
+            margin: 0;
+            p{
+                display: none;
+            }
+            .buttons-container{
+                justify-content: center;
+                .button-two{
+                    display: none;
+                }
+            }
+        }
+        .age-banner{
+            display: none;
+        }
+        .overlay{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero{
+        width: 90%;
+    }
+}

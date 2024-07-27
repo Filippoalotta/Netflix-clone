@@ -1,0 +1,47 @@
+.modal-window {
+  width: 350px;
+  height: 400px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3019607843);
+  border-radius: 4px;
+  position: absolute;
+  top: 45%;
+  right: 45%;
+  z-index: 400;
+}
+.modal-window .prova {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+.modal-window .first-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+.modal-window .first-icons img {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  background-color: #141414;
+}
+.modal-window .first-icons img:hover {
+  background-color: #333333;
+}
+.modal-window .details-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+.modal-window .details-container .compatibility {
+  color: green;
+  font-weight: 500;
+}
+.modal-window .details-container .detail {
+  padding: 2px 7px;
+  border: 1px solid gray;
+}
+.modal-window p .gray {
+  color: gray;
+}/*# sourceMappingURL=MovieModal.css.map */

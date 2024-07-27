@@ -1,0 +1,96 @@
+.hero {
+  background: url("../images/disturbia-thumbnail.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 120vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.hero .hero-content {
+  max-width: 600px;
+  margin: 0 0 80px 70px;
+}
+.hero .hero-content .movie-title {
+  width: 90%;
+}
+.hero .hero-content p {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  cursor: default;
+}
+.hero .hero-content .genres {
+  display: none;
+  font-size: 22px;
+}
+.hero .hero-content .buttons-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hero .hero-content .buttons-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+.hero .age-banner {
+  width: 85px;
+  height: 30px;
+  background-color: rgba(50, 50, 50, 0.5);
+  border-left: 4px solid #fff;
+  padding: 5px 8px 10px 5px;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 30%;
+  cursor: default;
+}
+.hero .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, hsla(0, 0%, 8%, 0) 0, hsla(0, 0%, 8%, 0.15) 15%, hsla(0, 0%, 8%, 0.35) 29%, hsla(0, 0%, 8%, 0.58) 44%, #141414 68%, #141414);
+  bottom: -1px;
+  height: 14.7vw;
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    width: 500px;
+    height: 50vh;
+    margin: 80px auto 0 auto;
+    padding-bottom: 20px;
+    border-radius: 25px;
+  }
+  .hero .hero-content {
+    text-align: center;
+    margin: 0;
+  }
+  .hero .hero-content p {
+    display: none;
+  }
+  .hero .hero-content .genres {
+    display: block;
+    margin: 20px 0;
+  }
+  .hero .hero-content .buttons-container {
+    justify-content: center;
+  }
+  .hero .age-banner {
+    display: none;
+  }
+  .hero .overlay {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    width: 90%;
+  }
+}/*# sourceMappingURL=Hero.css.map */
