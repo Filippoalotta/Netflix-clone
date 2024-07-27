@@ -8,6 +8,14 @@ import { HeroContext } from '../stores/HeroContext';
 
 const Home = () => {
 
+    // ToTop
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }, [])
+
     // Api back movie
     const keyApi = 'e32d38ddd3cda877d8de1b4378295217';
     const url = `https://api.themoviedb.org/3/movie/top_rated?api_key=${keyApi}&language=en-IT&page=1`;

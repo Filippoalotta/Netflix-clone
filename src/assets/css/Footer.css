@@ -22,6 +22,9 @@ footer nav ul .footer-title {
 footer nav ul li {
   cursor: pointer;
 }
+footer nav ul li:hover {
+  color: lightgray;
+}
 
 @media screen and (max-width: 650px) {
   footer nav {

@@ -1,47 +1,155 @@
 .modal-window {
-  width: 350px;
-  height: 400px;
+  width: 60vw;
+  height: 90vh;
   text-align: center;
+  background-color: #141414;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3019607843);
   border-radius: 4px;
-  position: absolute;
-  top: 45%;
-  right: 45%;
-  z-index: 400;
+  overflow-y: auto;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
 }
-.modal-window .prova {
+.modal-window .image-modal {
+  position: relative;
+}
+.modal-window .image-modal .thumb {
   width: 100%;
   border-radius: 4px 4px 0 0;
 }
-.modal-window .first-icons {
+.modal-window .image-modal .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, hsla(0, 0%, 8%, 0) 0, hsla(0, 0%, 8%, 0.15) 15%, hsla(0, 0%, 8%, 0.35) 29%, hsla(0, 0%, 8%, 0.58) 44%, #141414 68%, #141414);
+  bottom: -1px;
+  height: 14.7vw;
+  width: 100%;
+}
+.modal-window .modal-content {
+  transform: translateY(-200px);
+  text-align: left;
+  padding: 20px 70px 0 30px;
+}
+.modal-window .modal-content h1 {
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+.modal-window .modal-content .first-icons {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
-  padding: 10px 30px;
+  gap: 10px;
 }
-.modal-window .first-icons img {
-  padding: 10px;
-  border: 1px solid gray;
-  border-radius: 50%;
-  background-color: #141414;
-}
-.modal-window .first-icons img:hover {
-  background-color: #333333;
-}
-.modal-window .details-container {
+.modal-window .modal-content .first-icons button {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 10px 0;
 }
-.modal-window .details-container .compatibility {
+.modal-window .modal-content .first-icons .x {
+  transform: rotate(45deg);
+}
+.modal-window .modal-content .first-icons .icon {
+  position: initial;
+}
+.modal-window .modal-content .details-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 15px;
+  padding: 30px 0 0 0;
+}
+.modal-window .modal-content .details-container .compatibility {
   color: green;
   font-weight: 500;
 }
-.modal-window .details-container .detail {
+.modal-window .modal-content .details-container .detail {
   padding: 2px 7px;
   border: 1px solid gray;
+  text-transform: uppercase;
 }
-.modal-window p .gray {
+.modal-window .modal-content .plot-and-genres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 0;
+}
+.modal-window .modal-content .plot-and-genres .plot {
+  max-width: 350px;
+  text-align: left;
+  margin: 0;
+}
+.modal-window .modal-content .plot-and-genres .plot .gray {
+  font-weight: 500;
+}
+.modal-window .modal-content .language .gray {
   color: gray;
+}
+.modal-window .modal-cards-container {
+  color: #fff;
+  text-align: left;
+  transform: translateY(-150px);
+  padding: 0 30px;
+}
+.modal-window .modal-cards-container h2 {
+  font-size: 30px;
+}
+.modal-window .modal-cards-container .modal-cards-content-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+}
+.modal-window .modal-cards-container .modal-cards-content-container .modal-card {
+  width: 250px;
+  height: 300px;
+  background-color: #2f2f2f;
+  border-radius: 4px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.modal-window .modal-cards-container .modal-cards-content-container .modal-card .bdMC {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+.modal-window .modal-cards-container .modal-cards-content-container .modal-card .icon-modal {
+  position: absolute;
+  top: 20%;
+  right: 40%;
+  z-index: 949;
+}
+.modal-window .modal-cards-container .modal-cards-content-container .modal-card .modal-card-content {
+  padding: 10px 30px;
+  text-align: left;
+}
+.modal-window .modal-cards-container .modal-cards-content-container .modal-card .modal-card-content h3 {
+  margin: 0;
+}
+.modal-window .modal-cards-container .modal-cards-content-container .modal-card .modal-card-content .details-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 15px;
+  padding: 20px 0 0 0;
+}
+.modal-window .modal-cards-container .modal-cards-content-container .modal-card .modal-card-content .details-container .compatibility {
+  color: green;
+  font-weight: 500;
+}
+.modal-window .modal-cards-container .modal-cards-content-container .modal-card .modal-card-content .details-container .detail {
+  padding: 2px 7px;
+  border: 1px solid gray;
+  text-transform: uppercase;
+}
+.modal-window .modal-cards-container .modal-cards-content-container .modal-card:hover {
+  transition: all ease-in-out 0.3s;
+  transform: scale(1.05);
 }/*# sourceMappingURL=MovieModal.css.map */

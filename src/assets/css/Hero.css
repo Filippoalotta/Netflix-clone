@@ -1,5 +1,4 @@
 .hero {
-  background: url("../images/disturbia-thumbnail.jpg");
   background-position: center;
   background-size: cover;
   height: 120vh;
@@ -9,27 +8,28 @@
   position: relative;
 }
 .hero .hero-content {
+  width: 100%;
   max-width: 600px;
   margin: 0 0 80px 70px;
 }
-.hero .hero-content .movie-title {
-  width: 90%;
+.hero .hero-content h2 {
+  text-transform: uppercase;
+  font-size: 48px;
+  margin: 0;
+  font-family: fantasy;
 }
 .hero .hero-content p {
-  margin: 20px 0;
-  font-size: 22px;
+  margin: 0 0 20px 0;
+  font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   cursor: default;
-}
-.hero .hero-content .genres {
-  display: none;
-  font-size: 22px;
 }
 .hero .hero-content .buttons-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
 }
 .hero .hero-content .buttons-container button {
   display: flex;
@@ -67,6 +67,9 @@
     margin: 80px auto 0 auto;
     padding-bottom: 20px;
     border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
   }
   .hero .hero-content {
     text-align: center;
@@ -75,12 +78,11 @@
   .hero .hero-content p {
     display: none;
   }
-  .hero .hero-content .genres {
-    display: block;
-    margin: 20px 0;
-  }
   .hero .hero-content .buttons-container {
     justify-content: center;
+  }
+  .hero .hero-content .buttons-container .button-two {
+    display: none;
   }
   .hero .age-banner {
     display: none;

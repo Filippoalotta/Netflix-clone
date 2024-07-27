@@ -12,3 +12,25 @@ $secondaryColor: #141414;
   padding: 10px;
   cursor: pointer;
 }
+
+.card {
+  display: inline-block;
+  width: 200px;
+  height: 250px;
+  cursor: pointer;
+  position: relative;
+  .poster{
+      width: 100%;
+      height: 100%;
+  }
+  .icon-modal{
+      position: absolute;
+      top: 40%;
+      right: 40%;
+      z-index: 949;
+  }
+  &:hover{
+      transform: scale(1.1);
+      transition: all ease-in-out 0.3s;
+  }
+}

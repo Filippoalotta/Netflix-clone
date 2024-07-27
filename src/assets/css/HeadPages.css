@@ -1,0 +1,10 @@
+.head-pages-container {
+  padding: 50px 50px;
+}
+.head-pages-container .head-pages-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}/*# sourceMappingURL=HeadPages.css.map */

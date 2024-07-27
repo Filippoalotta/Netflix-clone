@@ -5,6 +5,9 @@ import LogIn from './assets/pages/LogIn';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './assets/firebase/firebase';
 import { useEffect } from 'react';
+import MoviesPage from './assets/pages/MoviesPage';
+import SeriesPage from './assets/pages/SeriesPage';
+import MyListPage from './assets/pages/MyListPage';
 
 function App() {
 
@@ -27,6 +30,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/login' element={<LogIn/>} />
+        <Route path='/series' element={<SeriesPage/>}/>
+        <Route path='/movies' element={<MoviesPage/>}/>
+        <Route path='/my-list' element={<MyListPage/>}/>
       </Routes>
     </>
   )

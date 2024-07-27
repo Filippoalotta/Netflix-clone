@@ -8,6 +8,7 @@ import manageAccountIcon from '../icons/account-manage-icon.png';
 import assistanceIcon from '../icons/assistance-icon.png';
 import { useState, useEffect } from 'react';
 import { logout } from '../firebase/firebase';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -56,24 +57,26 @@ const Header = () => {
     return(
         <>
             <header className={scrolled ? 'scroll' : ''}>
-                <img src={netflixLogo} alt="Netflix logo" className='logo' />
+                <Link to={'/'}>
+                    <img src={netflixLogo} alt="Netflix logo" className='logo' />
+                </Link>
                 <nav className='nav-desk'>
                     <ul>
-                        <a href="#">
+                        <Link to={'/'}>
                             <li>Home</li>
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to={'/series'}>
                             <li>TV Series</li>
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to={'/movies'}>
                             <li>Movies</li>
-                        </a>
-                        <a href="#">
-                            <li>New and Popular</li>
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to={'/movies'}>
+                            <li>New and Populars</li>
+                        </Link>
+                        <Link to={'/my-list'}>
                             <li>My List</li>
-                        </a>
+                        </Link>
                     </ul>
                 </nav>
                 <div className='search-account'>

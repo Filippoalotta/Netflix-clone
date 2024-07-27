@@ -27,6 +27,16 @@ body {
   box-sizing: border-box;
 }
 
+.overlay-home {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 950;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -75,4 +85,20 @@ h1 {
 }
 .button-three:hover {
   background-color: #db1b1b;
+}
+
+.icon-modal {
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1001;
+  padding: 5px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  background-color: #141414;
+}
+.icon-modal:hover {
+  background-color: #333333;
+  border: 2px solid #fff;
 }/*# sourceMappingURL=index.css.map */
