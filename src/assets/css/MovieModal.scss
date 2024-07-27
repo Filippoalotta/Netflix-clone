@@ -150,6 +150,10 @@ $secondaryColor: #141414;
                         }
                     }
                 }
+                &:hover{
+                    transition: all ease-in-out 0.3s;
+                    transform: scale(1.05);
+                }
             }
         }
     }
