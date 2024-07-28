@@ -11,3 +11,36 @@
   <h2>Netflix Tv Series Page</h2>
   <img src='https://github.com/user-attachments/assets/78af309c-afd2-4e61-834b-7ca7f5f89a7e' alt='Netflix clone tv series page' />
 </div>
+<div>
+  <h1>Technologies and Tools</h1>
+  <h3>Frontend:</h3>
+  <ul>
+    <li>React: JavaScript library for building user interfaces.</li>
+    <li>React Router: Library for handling routing in React applications.</li>
+    <li>Context API: For managing global application state.</li>
+    <li>Slick Carousel: For creating carousels and sliders.</li>
+    <li>Fetch API: For making HTTP requests and fetching data from the TMDB API.</li>
+    <li>SCSS: CSS preprocessor for more modular and maintainable styling.</li>
+    <li>JavaScript ES6+: For writing modern and clean JavaScript code.</li>
+  </ul>
+  <h3>Backend/API:</h3>
+  <ul>
+    <li>TMDB API: Primary source for movie and TV show data.</li>
+  </ul>
+  <h3>Build Tools and Package Management:</h3>
+  <ul>
+    <li>Vite: Tools to initialize and configure the React project.</li>
+    <li>Npm: JavaScript runtime and package manager.</li>
+  </ul>
+  <h3>Version Control:</h3>
+  <ul>
+    <li>Git: Version control system.</li>
+    <li>GitHub: Platform for hosting the project's repository.</li>
+  </ul>
+  <h3>Development and Debugging Tools:</h3>
+  <ul>
+    <li>Visual Studio Code: Code editor.</li>
+    <li>React Developer Tools: Browser extension for debugging React applications.</li>
+    <li>ESLint and Prettier: Tools for code formatting and linting.</li>
+  </ul>
+</div>
